@@ -1,0 +1,18 @@
+.btn {
+  background-color: #000080; /* nouvelle couleur de fond */
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px 2px;
+  border-radius: 16px;
+}
+.active {
+  background-color: #9494cc; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}

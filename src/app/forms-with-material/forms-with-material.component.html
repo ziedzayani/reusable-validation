@@ -1,0 +1,28 @@
+<div class="panel">
+    <form [formGroup]="userForm">
+                <mat-form-field appearance="outline" class="width-input">
+                    <mat-label>Name:</mat-label>
+                    <input matInput type="text" formControlName="name">
+                    <mat-error app-error-message [control]="userForm.get('name')!"></mat-error>
+                </mat-form-field>          
+            
+                <mat-form-field appearance="outline" class="width-input">
+                    <mat-label>Email:</mat-label>
+                    <input matInput type="email" formControlName="email">
+                    <mat-error app-error-message [control]="userForm.get('email')!"></mat-error>
+                </mat-form-field>
+                        
+                <mat-form-field appearance="outline" class="width-input">
+                    <mat-label>Address:</mat-label>
+                    <input matInput type="text" formControlName="address">
+                    <mat-error app-error-message [control]="userForm.get('address')!"></mat-error>
+                </mat-form-field>
+                       
+                <mat-form-field appearance="outline" class="width-input">
+                    <mat-label>Password:</mat-label>
+                    <input matInput type="password" formControlName="password">
+                    <mat-error app-error-message [control]="userForm.get('password')!"></mat-error>
+                </mat-form-field>
+            <button type="submit">Submit</button>
+    </form>
+</div>
