@@ -1,8 +1,7 @@
 import { ValidationErrors } from "@angular/forms";
 
-export const getValidatorErrorMessage = (validatorName: string, validatorErrorValue?: ValidationErrors): string|undefined => {
-
-    let args = messages.get(validatorName)?.validatorErrorsKey?.map(name => validatorErrorValue?.[name]);
+export const getValidatorErrorMessage = (validatorName: string, validatorErrors?: ValidationErrors): string|undefined => {
+    let args = messages.get(validatorName)?.validatorErrorsKey?.map(name => validatorErrors?.[name]);
     return (args) ? stringFormat(messages.get(validatorName)?.message,...args) : messages.get(validatorName)?.message;
 }
 
@@ -22,4 +21,4 @@ function stringFormat(template: string|undefined, ...args: any[]) {
         });
     }
     return undefined;
-  }
+ }
