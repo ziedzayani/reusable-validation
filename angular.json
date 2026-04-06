@@ -36,7 +36,10 @@
             "stylePreprocessorOptions": {
               "includePaths": ["node_modules/"]
             },
-            "scripts": []
+            "scripts": [],
+            "optimization": {
+              "fonts": false
+            }
           },
           "configurations": {
             "production": {
